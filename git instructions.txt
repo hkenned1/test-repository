@@ -1,0 +1,369 @@
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~ (master)
+$ cd desktop
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop (master)
+$ ls
+ desktop.ini   python-challenge/   Terminal-Test/   test/  'Untitled Folder'/   Untitled.ipynb   untitled.txt
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop (master)
+$ pwd
+/c/Users/HK/desktop
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop (master)
+$ cd python-challenge/
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ ls
+ main.ipynb   Pybank   PyRamen   README.md  'Transcript - Henry Kennedy - Barry University.pdf'
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Transcript - Henry Kennedy - Barry University.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git add .
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git commit -m"adding the file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HK@LAPTOP-9KUJS5ME.(none)')
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git push
+info: please complete authentication in your browser...
+Everything up-to-date
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Transcript - Henry Kennedy - Barry University.pdf
+
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Transcript - Henry Kennedy - Barry University.pdf
+
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git add .
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git commit -m"lets try to add again"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HK@LAPTOP-9KUJS5ME.(none)')
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git push
+To https://github.com/hkenned1/python-challenge.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/hkenned1/python-challenge.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 691 bytes | 43.00 KiB/s, done.
+From https://github.com/hkenned1/python-challenge
+   96c897a..eb7ccd6  main       -> origin/main
+Updating 96c897a..eb7ccd6
+Fast-forward
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Transcript - Henry Kennedy - Barry University.pdf
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Transcript - Henry Kennedy - Barry University.pdf
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        HENRY-KENNEDY fb.doc
+
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git add .
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HK@LAPTOP-9KUJS5ME.(none)')
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git commit m"hello again"
+error: pathspec 'mhello again' did not match any file(s) known to git
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git commit -"hello again"
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git commit -m"hello again"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HK@LAPTOP-9KUJS5ME.(none)')
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git push
+Everything up-to-date
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git config --global user.email "hkenned1@gmail.com"
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git add .
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git commit -m"hello adding file"
+[main b5b1bcb] hello adding file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 HENRY-KENNEDY fb.doc
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 13.79 KiB | 4.60 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hkenned1/python-challenge.git
+   eb7ccd6..b5b1bcb  main -> main
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/python-challenge (main)
+$ cd ..
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop (master)
+$ git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop (master)
+$ git clone https://github.com/hkenned1/Repository_2.git
+Cloning into 'Repository_2'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop (master)
+$ ls
+ desktop.ini         Repository_2/    test/               Untitled.ipynb
+ python-challenge/   Terminal-Test/  'Untitled Folder'/   untitled.txt
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop (master)
+$ cd Repository_2/
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/Repository_2 (main)
+$ ls
+README.md  Repository_2-main.zip
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/Repository_2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        goals.xlsx
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/Repository_2 (main)
+$ git add .
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/Repository_2 (main)
+$ git commit -m"adding file again"
+[main f524efa] adding file again
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 goals.xlsx
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/Repository_2 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 7.02 KiB | 7.02 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hkenned1/Repository_2.git
+   e088131..f524efa  main -> main
+(base)
+HK@LAPTOP-9KUJS5ME MINGW64 ~/desktop/Repository_2 (main)
+$
